@@ -2,6 +2,7 @@
 import './App.css';
 import Counter from './components/Counter';
 import CounterPrev from './components/CounterPrev';
+import FectchData from './components/FectchData';
 import UseEffcect4 from './components/UseEffcect4';
 import UseEffect1 from './components/UseEffect1';
 import UseEffect2 from './components/UseEffect2';
@@ -19,7 +20,8 @@ function App() {
       {/* <UseEffect1/> */}
       {/* <UseEffect2/> */}
       {/* <UseEffect3/> */}
-      <UseEffcect4/>
+      {/* <UseEffcect4/> */}
+      <FectchData/>
     </div>
   );
 }
