@@ -3,6 +3,8 @@ import './App.css';
 import Counter from './components/Counter';
 import CounterPrev from './components/CounterPrev';
 import FectchData from './components/FectchData';
+import FetchPost2 from './components/FetchPost2';
+import FetchPost3 from './components/FetchPost3';
 import UseEffcect4 from './components/UseEffcect4';
 import UseEffect1 from './components/UseEffect1';
 import UseEffect2 from './components/UseEffect2';
@@ -21,7 +23,9 @@ function App() {
       {/* <UseEffect2/> */}
       {/* <UseEffect3/> */}
       {/* <UseEffcect4/> */}
-      <FectchData/>
+      {/* <FectchData/> */}
+      {/* <FetchPost2/> */}
+      <FetchPost3/>
     </div>
   );
 }
