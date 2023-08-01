@@ -12,6 +12,7 @@ import UseEffect2 from "./components/UseEffect2";
 import UseEffect3 from "./components/UseEffect3";
 import UseStateArr from "./components/UseStateArr";
 import UseStateObject from "./components/UseStateObject";
+import ParentCallHook from "./components/ParentCallHook";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -29,11 +30,14 @@ function App() {
       {/* <FectchData/> */}
       {/* <FetchPost2/> */}
       {/* <FetchPost3/> */}
-      <UserContext.Provider value={"Ariya"}>
+      {/* <UserContext.Provider value={"Ariya"}>
         <ChannelContext.Provider value={"React Tutorial"}>
           <ContextComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+      <ParentCallHook/>
+
     </div>
   );
 }
