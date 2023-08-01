@@ -1,28 +1,31 @@
-import React, { useState } from 'react'
-import TitleCallHook from './TitleCallHook'
-import ButtonCall from './ButtonCall'
-import CountCall from './CountCall'
+import React, { useState } from 'react';
+import TitleCallHook from './TitleCallHook';
+import ButtonCall from './Button';
+import CountCall from './CountCall';
+import Button from './Button';
 
 function ParentCallHook() {
-    const [age,setAge]= useState(25)
-    const [salary,setSalary] =useState(50000)
+  const [age, setAge] = useState(25);
+  const [salary, setSalary] = useState(50000);
 
+  const incrementAge = () => {
+    setAge(age + 1);
+  };
+  
+  const incrementSalary = () => {
+    setSalary(salary + 1000);
+  };
 
-    const incrementAge =()=>{
-        setAge(age+1)
-    }
-    const incrementSalary =()=>{
-        setSalary(salary+1000)
-    }
   return (
-    
-    <TitleCallHook/>
-    <Count text="Age" count={age}/>
-    <ButtonCall handleClick={incrementAge}>Increment Age</ButtonCall>
-    <CountCall text ="Salary" count ={salary}>
-    <ButtonCall handleClick={incrementSalary} >Increment Salary</ButtonCall>
-   
-  )
+    <>
+      <TitleCallHook />
+      <CountCall text="Age" count={age} />
+      <Button handleClick={incrementAge}>Increment Age</Button>
+      <CountCall text="Salary" count={salary}/>
+        <Button handleClick={incrementSalary}>Increment Salary</Button>
+     
+    </>
+  );
 }
 
-export default ParentCallHook
+export default ParentCallHook;

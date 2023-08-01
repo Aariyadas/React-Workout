@@ -1,8 +1,9 @@
 import React from 'react'
 
-function CountCall() {
+function CountCall({text,count}) {
+    console.log(`Rendering ${text}`)
   return (
-    <div>CountCall</div>
+    <div>{text} -{count}</div>
   )
 }
 
