@@ -13,6 +13,8 @@ import UseEffect3 from "./components/UseEffect3";
 import UseStateArr from "./components/UseStateArr";
 import UseStateObject from "./components/UseStateObject";
 import ParentCallHook from "./components/ParentCallHook";
+import Interview1 from "./components/Interview1";
+import Interview2 from "./components/Interview2";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -36,7 +38,9 @@ function App() {
         </ChannelContext.Provider>
       </UserContext.Provider> */}
 
-      <ParentCallHook/>
+      {/* <ParentCallHook/> */}
+      {/* <Interview1/> */}
+      <Interview2/>
 
     </div>
   );

@@ -1,38 +1,62 @@
+/* Styling for the entire app */
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styling for the restaurant card container */
+.card-container-horizontal {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
+/* Styling for horizontal restaurant card */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  width: 250px;
+}
+/* Styling for the card inner content */
+.card-inner {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styling for the restaurant name */
+.card-inner h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Styling for the restaurant details */
+.card-inner p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Styling for the restaurant link */
+.card-inner .link {
   color: #61dafb;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Styling for the restaurant image */
+.card-inner img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
   }
 }
