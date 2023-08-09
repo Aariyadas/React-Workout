@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Interview2 = () => {
-    return 
+function Interview2() {
+  return (
+   <h1><Interview Two </h1>
+  )
 }
-
 
 export default Interview2
