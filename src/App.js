@@ -15,6 +15,8 @@ import UseStateObject from "./components/UseStateObject";
 import ParentCallHook from "./components/ParentCallHook";
 import Interview1 from "./components/Interview1";
 import Interview2 from "./components/Interview2";
+import Interview3 from "./components/Interview3";
+import Interview4 from "./components/Interview4";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -40,7 +42,9 @@ function App() {
 
       {/* <ParentCallHook/> */}
       {/* <Interview1/> */}
-      <Interview2/>
+{/* <Interview2/> */}
+{/* <Interview3/> */}
+<Interview4/>
 
     </div>
   );
