@@ -17,7 +17,15 @@ import Interview1 from "./components/Interview1";
 import Interview2 from "./components/Interview2";
 import Interview3 from "./components/Interview3";
 import Interview4 from "./components/Interview4";
-import UseState from "./pages/UseState/UseState";
+// import UseState from "./pages/UseState/UseState";
+// import Crud from "./components/Crud";
+import UseReducer1 from "./components/UseReducer1";
+import UserReducer from "./components/UserReducer";
+import UseReducer3 from "./components/UseReducer3";
+import FetchReducer from "./components/FetchReducer";
+import FetchREducer2 from "./components/FetchREducer2";
+import MyForms from "./MyForms";
+import Logged from "./components/Logged";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -26,15 +34,15 @@ function App() {
     <div className="App">
       {/* <Counter/> */}
       {/* <CounterPrev/> */}
-      {/* <UseStateObject/> */}
-      {/* <UseStateArr/> */}
+{/* <UseStateObject/> */}
+       {/* <UseStateArr/>  */}
       {/* <UseEffect1/> */}
       {/* <UseEffect2/> */}
       {/* <UseEffect3/> */}
       {/* <UseEffcect4/> */}
       {/* <FectchData/> */}
       {/* <FetchPost2/> */}
-      {/* <FetchPost3/> */}
+      <FetchPost3/>
       {/* <UserContext.Provider value={"Ariya"}>
         <ChannelContext.Provider value={"React Tutorial"}>
           <ContextComponentC />
@@ -45,7 +53,16 @@ function App() {
       {/* <Interview1/> */}
 {/* <Interview2/> */}
 {/* <Interview3/> */}
-{/* <Interview4/> */}
+{/* <Interview4/>/ */}
+{/* <Crud/> */}
+{/* <UseReducer1/> */}
+{/* <UserReducer/> */}
+{/* <UseReducer3/> */}
+{/* <FetchReducer/> */}
+{/* <FetchREducer2/> */}
+{/* <FormData/> */}
+{/* <MyForms/> */}
+{/* <Logged/> */}
 
 
     </div>
